@@ -27,6 +27,69 @@ namespace AncientMountain.Managed.Skia
             FilterQuality = SKFilterQuality.Medium
         };
 
+        public static SKPaint PaintBoss { get; } = new()
+        {
+            Color = SKColors.Fuchsia,
+            StrokeWidth = 3,
+            Style = SKPaintStyle.Stroke,
+            IsAntialias = true,
+            FilterQuality = SKFilterQuality.High
+        };
+
+        public static SKPaint TextBoss { get; } = new()
+        {
+            SubpixelText = true,
+            Color = SKColors.Fuchsia,
+            IsStroke = false,
+            TextSize = 12,
+            TextEncoding = SKTextEncoding.Utf8,
+            IsAntialias = true,
+            Typeface = CustomFonts.SKFontFamilyRegular,
+            FilterQuality = SKFilterQuality.High
+        };
+
+        public static SKPaint PaintBTR { get; } = new()
+        {
+            Color = SKColors.Orange,
+            StrokeWidth = 3,
+            Style = SKPaintStyle.Stroke,
+            IsAntialias = true,
+            FilterQuality = SKFilterQuality.High
+        };
+
+        public static SKPaint TextBTR { get; } = new()
+        {
+            SubpixelText = true,
+            Color = SKColors.Orange,
+            IsStroke = false,
+            TextSize = 12,
+            TextEncoding = SKTextEncoding.Utf8,
+            IsAntialias = true,
+            Typeface = CustomFonts.SKFontFamilyRegular,
+            FilterQuality = SKFilterQuality.High
+        };
+
+        public static SKPaint PaintUSEC { get; } = new()
+        {
+            Color = SKColors.CadetBlue,
+            StrokeWidth = 3,
+            Style = SKPaintStyle.Stroke,
+            IsAntialias = true,
+            FilterQuality = SKFilterQuality.High
+        };
+
+        public static SKPaint TextUSEC { get; } = new()
+        {
+            SubpixelText = true,
+            Color = SKColors.CadetBlue,
+            IsStroke = false,
+            TextSize = 12,
+            TextEncoding = SKTextEncoding.Utf8,
+            IsAntialias = true,
+            Typeface = CustomFonts.SKFontFamilyRegular,
+            FilterQuality = SKFilterQuality.High
+        };
+
         public static SKPaint PaintTeammate { get; } = new()
         {
             Color = SKColors.LimeGreen,

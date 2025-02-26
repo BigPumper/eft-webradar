@@ -164,6 +164,29 @@ namespace AncientMountain.Managed.Data
         {
             if (this == localPlayer)
                 return new ValueTuple<SKPaint, SKPaint>(SKPaints.PaintLocalPlayer, SKPaints.TextLocalPlayer);
+            if (this.Name == "Killa" ||
+                this.Name == "Sanitar" ||
+                this.Name == "Reshala" ||
+                this.Name == "Gluhar" ||
+                this.Name == "Priest" ||
+                this.Name == "Cultist" ||
+                this.Name == "Tagilla" ||
+                this.Name == "Partisan" ||
+                this.Name == "Big Pepe" ||
+                this.Name == "Birdeye" ||
+                this.Name == "Knight" ||
+                this.Name == "Kaban" ||
+                this.Name == "Kollontay" ||
+                this.Name == "Shturman" ||
+                this.Name == "Zombie" ||
+                this.Name == "Zombie Tagilla")
+                return new ValueTuple<SKPaint, SKPaint>(SKPaints.PaintBoss, SKPaints.TextBoss);
+
+            if (this.Name == "BTR")
+                return new ValueTuple<SKPaint, SKPaint>(SKPaints.PaintBTR, SKPaints.TextBTR);
+
+            if (this.Name == "Usec")
+                return new ValueTuple<SKPaint, SKPaint>(SKPaints.PaintUSEC, SKPaints.TextUSEC);
             switch (this.Type)
             {
                 case WebPlayerType.LocalPlayer:
